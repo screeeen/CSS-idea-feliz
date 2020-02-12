@@ -24,3 +24,53 @@ body {
   margin: auto;
   background-color: red;
 }
+
+@media (min-width: 400px) {
+  #canvas {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  #canvas > div {
+    position: relative;
+    width: 28%;
+    height: 28%;
+    padding-top: 28%;
+    margin: 4% 2%;
+    background-color: red;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    background-color: green;
+  }
+
+  .triangle-up {
+    position: relative;
+    width: 0;
+    border-bottom: solid 50px green;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+  }
+  .triangle-down {
+    position: relative;
+    width: 0;
+    border-bottom: solid 50px green;
+    border-right: solid 30px transparent;
+    border-left: solid 30px transparent;
+    transform: rotate(180deg);
+  }
+}
